@@ -1,0 +1,265 @@
+:root {
+  --primary: #505050;
+  --bg: #000000;
+  --kata: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style Navbar */
+nav {
+  opacity: 0.7;
+}
+
+nav .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav img {
+  width: 80px;
+}
+
+/* Style Header Video */
+.layar-penuh {
+  width: 100%;
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+  height: 54vh;
+  width: 100%;
+  z-index: 2;
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+
+header .intro {
+  z-index: 100;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-top: 125px;
+}
+
+header .intro h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+header .intro button {
+  margin-top: 15px;
+  background-color: #866e65;
+  font-weight: bold;
+  color: #fff;
+}
+
+header .intro button:hover {
+  background-color: #313030;
+  color: #e78057;
+}
+
+/* Section */
+section h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section h3::after {
+  content: "";
+  border-bottom: 5px solid #c86b85;
+  width: 52px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Style About */
+#about {
+  background-color: var(--bg);
+}
+
+.deskripsi {
+  background: url(about3.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 80px;
+}
+
+#about,
+#topics,
+#galleries,
+#contact {
+  text-align: center;
+}
+
+#about h3 {
+  padding-top: 80px;
+  color: var(--kata);
+}
+
+#topics h3 {
+  padding-top: 80px;
+  color: var(--kata);
+}
+
+#galleries h3 {
+  padding-top: 80px;
+  color: var(--kata);
+}
+
+#contact h3 {
+  padding-top: 80px;
+  color: var(--kata);
+}
+
+section p.ringkasan {
+  font-style: italic;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 80px;
+  padding-right: 80px;
+  mix-blend-mode: difference;
+}
+
+#topics .row {
+  display: flex;
+  justify-content: center;
+}
+
+#topics .row h5 {
+  text-align: center;
+}
+
+#topics .row p {
+  text-align: justify;
+}
+
+#topics {
+  overflow: hidden;
+  background-color: var(--bg);
+}
+
+#galleries {
+  background-color: var(--bg);
+}
+
+#galleries .jumbotron {
+  background-color: #fff;
+}
+
+#galleries .jumbotron img {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#galleries img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.jumbotron {
+  padding-left: 50px;
+}
+
+/* Contact Style */
+#contact {
+  background-color: var(--bg);
+  overflow: hidden;
+}
+
+#contact p {
+  color: #fff;
+}
+
+#contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a3939;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#contact .row .map {
+  object-fit: cover;
+  width: 100%;
+  height: 25rem;
+}
+
+#contact .row form button {
+  margin-top: 2rem;
+  padding: 8px 40px;
+  font-weight: bold;
+}
+
+#contact .row form button:hover {
+  background-color: #313030;
+  color: #e78057;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg);
+  text-align: center;
+  padding: 1rem 0 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: #e78057;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+footer .credit a {
+  font-weight: 700;
+}
